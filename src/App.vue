@@ -8,6 +8,10 @@ var selectDemo3 = ref("item-1");
 var navigationBarDemo = ref("item-1");
 var navigationRailDemo = ref("item-1");
 var checkedState = ref(false)
+
+function getEdit() {
+  console.log(testDemo.value);
+}
 </script>
 
 <template>
@@ -20,18 +24,18 @@ var checkedState = ref(false)
     </a>
   </div>
 
-  <mdvi-slider v-model="numDemo" max="20" @mdvi-input="inputDemo"></mdvi-slider>
-  <mdvi-text-field v-model="testDemo" helper="轻编写" @mdvi-input="inputDemo"></mdvi-text-field>
-  <mdvi-range-slider v-model="numListDemo" @mdvi-input="inputDemo"></mdvi-range-slider>
+  <mdvi-slider v-model="numDemo" max="20"></mdvi-slider>
+  <mdvi-text-field v-model="testDemo" helper="轻编写"></mdvi-text-field>
+  <mdvi-range-slider v-model="numListDemo"></mdvi-range-slider>
 
-  <mdvi-select v-model="selectDemo" @mdvi-input="inputDemo">
+  <mdvi-select v-model="selectDemo">
     <mdui-menu-item value="item-1">Item 1</mdui-menu-item>
     <mdui-menu-item value="item-2">Item 2</mdui-menu-item>
     <mdui-menu-item value="item-3">Item 3</mdui-menu-item>
   </mdvi-select>
 
 
-  <mdvi-menu selects="single" v-model="selectDemo3" @mdvi-input="inputDemo">
+  <mdvi-menu selects="single" v-model="selectDemo3">
     <mdui-menu-item value="item-1">Item 1</mdui-menu-item>
     <mdui-menu-item value="item-2">Item 2</mdui-menu-item>
   </mdvi-menu>
@@ -52,8 +56,9 @@ var checkedState = ref(false)
     <mdui-navigation-rail-item icon="library_music--outlined" value="library">Library</mdui-navigation-rail-item>
   </mdvi-navigation-rail>
 
-  <mdvi-switch v-model="checkedState" ></mdvi-switch>
+  <mdvi-switch v-model="checkedState"></mdvi-switch>
 
+  <mdui-button @click="getEdit">检查</mdui-button>
 </template>
 
 <style scoped>
