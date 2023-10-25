@@ -205,7 +205,7 @@ const Q = /* @__PURE__ */ u(J, [["render", L]]), p = {
     }, n.config.globalProperties.mdviHandleValueInput = function(e) {
       this.$emit("update:modelValue", e), this.$emit("mdvi-input", e);
     }, Object.keys(p).forEach((e) => {
-      n.component(e, p[e]), console.log(n);
+      n.component(e, p[e]);
     });
   }
 };
