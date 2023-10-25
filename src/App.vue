@@ -1,20 +1,28 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import { reactive, ref } from 'vue';
 
+var testDemo = reactive("dada");
+
+
+function mInput(txt){
+  console.log(txt);
+
+}
 
 </script>
 
 <template>
   <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
+    <a  href="https://vitejs.dev" target="_blank">
+      <img  src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
-  <HelloWorld msg="Vite + Vue" />
-  <mdui-vui-button full-width>4534534</mdui-vui-button>
+ 
+  <mdvi-text-field v-model="testDemo" :label="testDemo" helper="轻编写" @mdvi-input="mInput"></mdvi-text-field>
+
 </template>
 
 <style scoped>

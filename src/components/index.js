@@ -1,8 +1,10 @@
 
-import MduiVuiButton from './MduiVuiButton.vue';
-const components = {
-    MduiVuiButton,
+import MdviButton from './MdviButton.vue';
+import MdviTextField from './MdviTextField.vue';
 
+const components = {
+    MdviButton,
+    MdviTextField
 };
 
 export default {
