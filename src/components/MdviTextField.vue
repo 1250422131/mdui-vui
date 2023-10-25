@@ -31,7 +31,7 @@ export default {
         });
 
         return {
-            updateValue,upText
+            updateValue
         };
 
     }
