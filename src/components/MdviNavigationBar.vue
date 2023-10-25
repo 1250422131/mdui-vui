@@ -1,26 +1,25 @@
 <template>
-    <mdui-text-field :value="modelValue" @input="mdviHandleInput" @change="mdviHandleChange">
+    <mdui-navigation-bar :value="modelValue" @input="mdviHandleInput" @change="mdviHandleChange">
         <slot></slot>
-    </mdui-text-field>
+    </mdui-navigation-bar>
 </template>
-
-
+  
 <script>
-import { onMounted } from 'vue';
+//该组件初始化值存在问题
+import { ref, watch, onMounted } from 'vue';
 
 export default {
-    name: 'mdvi-text-field',
+    name: 'mdvi-navigation-bar',
     props: {
         modelValue: {
             type: String,
             default: ''
-        },
+        }
     },
     setup(props, { emit }) {
         onMounted(() => { });
         return {};
     }
-}
+};
 </script>
-
-
+  

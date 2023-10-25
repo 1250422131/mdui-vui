@@ -4,6 +4,6 @@ import App from './App.vue'
 import 'mdui/mdui.css';
 import 'mdui';
 import MduiVui from './components/index';
-
+import '@mdui/icons/search.js';
 
 createApp(App).use(MduiVui).mount('#app')
