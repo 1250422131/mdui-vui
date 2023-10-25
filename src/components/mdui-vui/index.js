@@ -53,7 +53,6 @@ export default {
 
         Object.keys(components).forEach((name) => {
             app.component(name, components[name]);
-            console.log(app);
         });
     }
 };
