@@ -9,7 +9,7 @@
 import { onMounted } from 'vue';
 
 export default {
-    name: 'mdvi-button',
+    name: 'mdvi-text-field',
 
     props: {
         modelValue: {
