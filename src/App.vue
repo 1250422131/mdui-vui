@@ -2,15 +2,18 @@
 import { reactive, ref } from 'vue';
 var testDemo = ref("dada");
 var numDemo = ref(10);
-var numListDemo = ref([10, 20]);
+var numListDemo = reactive([10, 20]);
 var selectDemo = ref("item-1");
 var selectDemo3 = ref("item-1");
 var navigationBarDemo = ref("item-1");
 var navigationRailDemo = ref("item-1");
 var checkedState = ref(false)
 
+var groupDemo = reactive(["week", "month"]);
+
+
 function getEdit() {
-  console.log(testDemo.value);
+  console.log(groupDemo);
 }
 </script>
 
@@ -57,6 +60,14 @@ function getEdit() {
   </mdvi-navigation-rail>
 
   <mdvi-switch v-model="checkedState"></mdvi-switch>
+
+
+  <mdvi-segmented-button-group v-model="groupDemo" selects="multiple">
+    <mdui-segmented-button value="day">Day</mdui-segmented-button>
+    <mdui-segmented-button value="week">Week</mdui-segmented-button>
+    <mdui-segmented-button value="month">Month</mdui-segmented-button>
+  </mdvi-segmented-button-group>
+
 
   <mdui-button @click="getEdit">检查</mdui-button>
 </template>
