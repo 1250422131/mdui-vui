@@ -27,14 +27,8 @@ export default {
 
         };
 
-        const upText = () => {
-            console.log("aaa");
-        };
-
         onMounted(() => {
         });
-
-
 
         return {
             updateValue,upText
