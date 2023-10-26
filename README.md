@@ -13,6 +13,8 @@ mdui-vui 是对于 [MDUI 2.x](https://www.mdui.org/) 的 Vue3 封装迁移，由
 - mdvi-slider
 - mdvi-switch
 - mdvi-text-field
+- mdvi-segmented-button-group
+- mdvi-collapse
 
 ## 快速开始
 
@@ -50,6 +52,10 @@ createApp(App).use(mduiVui).mount('#app')
 ### mdvi-range-slider
 
 该组件目前存在初始化值问题，绑定变量后仅仅可以接受值，赋值目前存在问题，**目前不建议使用此组件**。
+
+### mdvi-segmented-button-group
+
+该组件目前存在初始化值问题，该组件的v-model必须为reactive的，否则就会导致change进入死循环，**目前不建议使用此组件**。
 
 ## 参与贡献
 

@@ -1,15 +1,15 @@
-import { openBlock as a, createElementBlock as l, renderSlot as m, onMounted as r } from "vue";
-const u = (n, e) => {
-  const d = n.__vccOpts || n;
-  for (const [i, o] of e)
-    d[i] = o;
+import { openBlock as i, createElementBlock as l, renderSlot as m, onMounted as r } from "vue";
+const u = (e, n) => {
+  const d = e.__vccOpts || e;
+  for (const [o, a] of n)
+    d[o] = a;
   return d;
 }, v = {
   name: "mdvi-button"
 };
-function $(n, e, d, i, o, s) {
-  return a(), l("mdui-button", null, [
-    m(n.$slots, "default")
+function $(e, n, d, o, a, s) {
+  return i(), l("mdui-button", null, [
+    m(e.$slots, "default")
   ]);
 }
 const f = /* @__PURE__ */ u(v, [["render", $]]), g = {
@@ -20,21 +20,21 @@ const f = /* @__PURE__ */ u(v, [["render", $]]), g = {
       default: ""
     }
   },
-  setup(n, { emit: e }) {
+  setup(e, { emit: n }) {
     return r(() => {
     }), {};
   }
 }, H = ["value"];
-function h(n, e, d, i, o, s) {
-  return a(), l("mdui-text-field", {
+function C(e, n, d, o, a, s) {
+  return i(), l("mdui-text-field", {
     value: d.modelValue,
-    onInput: e[0] || (e[0] = (...t) => n.mdviHandleInput && n.mdviHandleInput(...t)),
-    onChange: e[1] || (e[1] = (...t) => n.mdviHandleChange && n.mdviHandleChange(...t))
+    onInput: n[0] || (n[0] = (...t) => e.mdviHandleInput && e.mdviHandleInput(...t)),
+    onChange: n[1] || (n[1] = (...t) => e.mdviHandleChange && e.mdviHandleChange(...t))
   }, [
-    m(n.$slots, "default")
+    m(e.$slots, "default")
   ], 40, H);
 }
-const C = /* @__PURE__ */ u(g, [["render", h]]), I = {
+const I = /* @__PURE__ */ u(g, [["render", C]]), h = {
   name: "mdvi-slider",
   props: {
     modelValue: {
@@ -42,19 +42,19 @@ const C = /* @__PURE__ */ u(g, [["render", h]]), I = {
       default: 0
     }
   },
-  setup(n, { emit: e }) {
+  setup(e, { emit: n }) {
     return r(() => {
     }), {};
   }
 }, V = ["value"];
-function c(n, e, d, i, o, s) {
-  return a(), l("mdui-slider", {
+function y(e, n, d, o, a, s) {
+  return i(), l("mdui-slider", {
     value: d.modelValue,
-    onInput: e[0] || (e[0] = (...t) => n.mdviHandleInput && n.mdviHandleInput(...t)),
-    onChange: e[1] || (e[1] = (...t) => n.mdviHandleChange && n.mdviHandleChange(...t))
+    onInput: n[0] || (n[0] = (...t) => e.mdviHandleInput && e.mdviHandleInput(...t)),
+    onChange: n[1] || (n[1] = (...t) => e.mdviHandleChange && e.mdviHandleChange(...t))
   }, null, 40, V);
 }
-const y = /* @__PURE__ */ u(I, [["render", c]]), M = {
+const c = /* @__PURE__ */ u(h, [["render", y]]), S = {
   name: "mdvi-range-slider",
   props: {
     modelValue: {
@@ -62,19 +62,19 @@ const y = /* @__PURE__ */ u(I, [["render", c]]), M = {
       default: []
     }
   },
-  setup(n, { emit: e }) {
+  setup(e, { emit: n }) {
     return r(() => {
     }), {};
   }
-}, S = ["value"];
-function b(n, e, d, i, o, s) {
-  return a(), l("mdui-range-slider", {
+}, M = ["value"];
+function b(e, n, d, o, a, s) {
+  return i(), l("mdui-range-slider", {
     value: d.modelValue,
-    onInput: e[0] || (e[0] = (...t) => n.mdviHandleInput && n.mdviHandleInput(...t)),
-    onChange: e[1] || (e[1] = (...t) => n.mdviHandleChange && n.mdviHandleChange(...t))
-  }, null, 40, S);
+    onInput: n[0] || (n[0] = (...t) => e.mdviHandleInput && e.mdviHandleInput(...t)),
+    onChange: n[1] || (n[1] = (...t) => e.mdviHandleChange && e.mdviHandleChange(...t))
+  }, null, 40, M);
 }
-const k = /* @__PURE__ */ u(M, [["render", b]]), _ = {
+const k = /* @__PURE__ */ u(S, [["render", b]]), B = {
   name: "mdvi-menu",
   props: {
     modelValue: {
@@ -82,21 +82,21 @@ const k = /* @__PURE__ */ u(M, [["render", b]]), _ = {
       default: null
     }
   },
-  setup(n, { emit: e }) {
+  setup(e, { emit: n }) {
     return r(() => {
     }), {};
   }
-}, B = ["value"];
-function P(n, e, d, i, o, s) {
-  return a(), l("mdui-menu", {
+}, A = ["value"];
+function P(e, n, d, o, a, s) {
+  return i(), l("mdui-menu", {
     value: d.modelValue,
-    onInput: e[0] || (e[0] = (...t) => n.mdviHandleInput && n.mdviHandleInput(...t)),
-    onChange: e[1] || (e[1] = (...t) => n.mdviHandleChange && n.mdviHandleChange(...t))
+    onInput: n[0] || (n[0] = (...t) => e.mdviHandleInput && e.mdviHandleInput(...t)),
+    onChange: n[1] || (n[1] = (...t) => e.mdviHandleChange && e.mdviHandleChange(...t))
   }, [
-    m(n.$slots, "default")
-  ], 40, B);
+    m(e.$slots, "default")
+  ], 40, A);
 }
-const w = /* @__PURE__ */ u(_, [["render", P]]), A = {
+const _ = /* @__PURE__ */ u(B, [["render", P]]), w = {
   name: "mdvi-select",
   props: {
     modelValue: {
@@ -104,21 +104,21 @@ const w = /* @__PURE__ */ u(_, [["render", P]]), A = {
       default: null
     }
   },
-  setup(n, { emit: e }) {
+  setup(e, { emit: n }) {
     return {};
   }
 }, N = ["value"];
-function E(n, e, d, i, o, s) {
-  return a(), l("mdui-select", {
+function E(e, n, d, o, a, s) {
+  return i(), l("mdui-select", {
     ref: "mduiSelect",
     value: d.modelValue,
-    onInput: e[0] || (e[0] = (...t) => n.mdviHandleInput && n.mdviHandleInput(...t)),
-    onChange: e[1] || (e[1] = (...t) => n.mdviHandleChange && n.mdviHandleChange(...t))
+    onInput: n[0] || (n[0] = (...t) => e.mdviHandleInput && e.mdviHandleInput(...t)),
+    onChange: n[1] || (n[1] = (...t) => e.mdviHandleChange && e.mdviHandleChange(...t))
   }, [
-    m(n.$slots, "default")
+    m(e.$slots, "default")
   ], 40, N);
 }
-const O = /* @__PURE__ */ u(A, [["render", E]]), R = {
+const O = /* @__PURE__ */ u(w, [["render", E]]), R = {
   name: "mdvi-navigation-bar",
   props: {
     modelValue: {
@@ -126,21 +126,21 @@ const O = /* @__PURE__ */ u(A, [["render", E]]), R = {
       default: ""
     }
   },
-  setup(n, { emit: e }) {
+  setup(e, { emit: n }) {
     return r(() => {
     }), {};
   }
 }, j = ["value"];
-function F(n, e, d, i, o, s) {
-  return a(), l("mdui-navigation-bar", {
+function F(e, n, d, o, a, s) {
+  return i(), l("mdui-navigation-bar", {
     value: d.modelValue,
-    onInput: e[0] || (e[0] = (...t) => n.mdviHandleInput && n.mdviHandleInput(...t)),
-    onChange: e[1] || (e[1] = (...t) => n.mdviHandleChange && n.mdviHandleChange(...t))
+    onInput: n[0] || (n[0] = (...t) => e.mdviHandleInput && e.mdviHandleInput(...t)),
+    onChange: n[1] || (n[1] = (...t) => e.mdviHandleChange && e.mdviHandleChange(...t))
   }, [
-    m(n.$slots, "default")
+    m(e.$slots, "default")
   ], 40, j);
 }
-const T = /* @__PURE__ */ u(R, [["render", F]]), q = {
+const G = /* @__PURE__ */ u(R, [["render", F]]), T = {
   name: "mdvi-navigation-rail",
   props: {
     modelValue: {
@@ -148,21 +148,21 @@ const T = /* @__PURE__ */ u(R, [["render", F]]), q = {
       default: ""
     }
   },
-  setup(n, { emit: e }) {
+  setup(e, { emit: n }) {
     return r(() => {
     }), {};
   }
-}, z = ["value"];
-function D(n, e, d, i, o, s) {
-  return a(), l("mdui-navigation-rail", {
+}, q = ["value"];
+function z(e, n, d, o, a, s) {
+  return i(), l("mdui-navigation-rail", {
     value: d.modelValue,
-    onInput: e[0] || (e[0] = (...t) => n.mdviHandleInput && n.mdviHandleInput(...t)),
-    onChange: e[1] || (e[1] = (...t) => n.mdviHandleChange && n.mdviHandleChange(...t))
+    onInput: n[0] || (n[0] = (...t) => e.mdviHandleInput && e.mdviHandleInput(...t)),
+    onChange: n[1] || (n[1] = (...t) => e.mdviHandleChange && e.mdviHandleChange(...t))
   }, [
-    m(n.$slots, "default")
-  ], 40, z);
+    m(e.$slots, "default")
+  ], 40, q);
 }
-const G = /* @__PURE__ */ u(q, [["render", D]]), J = {
+const D = /* @__PURE__ */ u(T, [["render", z]]), J = {
   name: "mdvi-switch",
   props: {
     modelValue: {
@@ -170,45 +170,91 @@ const G = /* @__PURE__ */ u(q, [["render", D]]), J = {
       default: !1
     }
   },
-  setup(n, { emit: e }) {
+  setup(e, { emit: n }) {
     return r(() => {
     }), {};
   }
 }, K = ["checked"];
-function L(n, e, d, i, o, s) {
-  return a(), l("mdui-switch", {
+function L(e, n, d, o, a, s) {
+  return i(), l("mdui-switch", {
     checked: d.modelValue,
-    onInput: e[0] || (e[0] = (t) => n.mdviHandleValueInput(t.target.checked)),
-    onChange: e[1] || (e[1] = (t) => n.mdviHandleValueChange(t.target.checked))
+    onInput: n[0] || (n[0] = (t) => e.mdviHandleValueInput(t.target.checked)),
+    onChange: n[1] || (n[1] = (t) => e.mdviHandleValueChange(t.target.checked))
   }, null, 40, K);
 }
-const Q = /* @__PURE__ */ u(J, [["render", L]]), p = {
+const Q = /* @__PURE__ */ u(J, [["render", L]]), U = {
+  name: "mdvi-segmented-button-group",
+  props: {
+    modelValue: {
+      type: [String, Array],
+      default: null
+    }
+  },
+  setup(e, { emit: n }) {
+    return r(() => {
+    }), {};
+  }
+}, W = ["value"];
+function X(e, n, d, o, a, s) {
+  return i(), l("mdui-segmented-button-group", {
+    value: d.modelValue,
+    onInput: n[0] || (n[0] = (...t) => e.mdviHandleInput && e.mdviHandleInput(...t)),
+    onChange: n[1] || (n[1] = (...t) => e.mdviHandleChange && e.mdviHandleChange(...t))
+  }, [
+    m(e.$slots, "default")
+  ], 40, W);
+}
+const Y = /* @__PURE__ */ u(U, [["render", X]]), Z = {
+  name: "mdvi-collapse",
+  props: {
+    modelValue: {
+      type: String,
+      default: null
+    }
+  },
+  setup(e, { emit: n }) {
+    return r(() => {
+    }), {};
+  }
+}, x = ["value"];
+function ee(e, n, d, o, a, s) {
+  return i(), l("mdui-collapse", {
+    value: d.modelValue,
+    onInput: n[0] || (n[0] = (...t) => e.mdviHandleInput && e.mdviHandleInput(...t)),
+    onChange: n[1] || (n[1] = (...t) => e.mdviHandleChange && e.mdviHandleChange(...t))
+  }, [
+    m(e.$slots, "default")
+  ], 40, x);
+}
+const ne = /* @__PURE__ */ u(Z, [["render", ee]]), p = {
   MdviButton: f,
-  MdviTextField: C,
-  MdviSlider: y,
+  MdviTextField: I,
+  MdviSlider: c,
   MdviRangeSlider: k,
   MdviSelect: O,
-  MdviMenu: w,
-  MdviNavigationBar: T,
-  MdviNavigationRail: G,
-  MdviSwitch: Q
-}, W = {
-  install(n) {
-    n.config.globalProperties.mdviHandleChange = function(e) {
-      const d = e.target.value;
+  MdviMenu: _,
+  MdviNavigationBar: G,
+  MdviNavigationRail: D,
+  MdviSwitch: Q,
+  MdviSegmentedButtonGroup: Y,
+  MdviCollapse: ne
+}, de = {
+  install(e) {
+    e.config.globalProperties.mdviHandleChange = function(n) {
+      const d = n.target.value;
       this.$emit("update:modelValue", d), this.$emit("mdvi-change", d);
-    }, n.config.globalProperties.mdviHandleInput = function(e) {
-      const d = e.target.value;
+    }, e.config.globalProperties.mdviHandleInput = function(n) {
+      const d = n.target.value;
       this.$emit("update:modelValue", d), this.$emit("mdvi-input", d);
-    }, n.config.globalProperties.mdviHandleValueChange = function(e) {
-      this.$emit("update:modelValue", e), this.$emit("mdvi-change", e);
-    }, n.config.globalProperties.mdviHandleValueInput = function(e) {
-      this.$emit("update:modelValue", e), this.$emit("mdvi-input", e);
-    }, Object.keys(p).forEach((e) => {
-      n.component(e, p[e]);
+    }, e.config.globalProperties.mdviHandleValueChange = function(n) {
+      this.$emit("update:modelValue", n), this.$emit("mdvi-change", n);
+    }, e.config.globalProperties.mdviHandleValueInput = function(n) {
+      this.$emit("update:modelValue", n), this.$emit("mdvi-input", n);
+    }, Object.keys(p).forEach((n) => {
+      e.component(n, p[n]);
     });
   }
 };
 export {
-  W as default
+  de as default
 };
