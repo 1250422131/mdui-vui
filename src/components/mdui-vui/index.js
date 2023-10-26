@@ -9,7 +9,7 @@ import MdviNavigationBar from './MdviNavigationBar.vue';
 import MdviNavigationRail from './MdviNavigationRail.vue';
 import MdviSwitch from './MdviSwitch.vue';
 import MdviSegmentedButtonGroup from './MdviSegmentedButtonGroup.vue';
-
+import MdviCollapse from './MdviCollapse.vue';
 
 
 const components = {
@@ -22,7 +22,8 @@ const components = {
     MdviNavigationBar,
     MdviNavigationRail,
     MdviSwitch,
-    MdviSegmentedButtonGroup
+    MdviSegmentedButtonGroup,
+    MdviCollapse
 };
 
 export default {
@@ -32,15 +33,12 @@ export default {
             const newValue = event.target.value;
             this.$emit('update:modelValue', newValue);
             this.$emit('mdvi-change', newValue);
-            console.log(newValue);
-
         };
 
         app.config.globalProperties.mdviHandleInput = function (event) {
             const newValue = event.target.value;
             this.$emit('update:modelValue', newValue);
             this.$emit('mdvi-input', newValue);
-
         };
 
         app.config.globalProperties.mdviHandleValueChange = function (newValue) {
