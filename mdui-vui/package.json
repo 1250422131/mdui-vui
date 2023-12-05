@@ -1,6 +1,6 @@
 {
   "name": "mdui-vui",
-  "version": "0.0.1-Alpha-4",
+  "version": "0.0.1-Alpha-5",
   "description": "The Vue adaptation library for the MDUI component library allows you to use MDUI in Vue.",
   "main": "mdui-vui.js",
   "scripts": {
